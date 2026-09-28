@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**Describe the bug**
+## Describe the bug
 A clear and concise description of what the bug is.
 
 **To Reproduce**
@@ -34,5 +34,5 @@ If applicable, add screenshots to help explain your problem.
  - Browser [e.g. stock browser, safari]
  - Version [e.g. 22]
 
-**Additional context**
+## Additional context
 Add any other context about the problem here.
