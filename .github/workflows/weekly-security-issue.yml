@@ -19,7 +19,7 @@ jobs:
       - name: Generate Issue using GitHub CLI
         run: |
           gh issue create \
-            --title "Weekly Security Audit: Dependabot & Security Alerts" \
+            --title "[security] Weekly Security Audit: Dependabot & Security Alerts" \
             --body "### Dependabot & Security Alert Audit
 
           Team, please go through the following **5 repositories** to review, fix, and resolve any outstanding Dependabot or security alerts. 
