@@ -41,8 +41,9 @@ jobs:
           - [ ] **noid-ark**  [GitHub Repository](https://github.com/crkn-rcdr/noid-ark/security) 
           - [ ] **crkn_base_blacklight** (Ruby / Rails 7 + Blacklight 8)  [GitHub Repository](https://github.com/crkn-rcdr/crkn_base_blacklight/security)
          
-          ---
-          
-            --label "security"
+          ---" \
+            --label "security" \
+            --assignee "${{ github.actor }}" \
+            --assignee "jmacgreg"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
