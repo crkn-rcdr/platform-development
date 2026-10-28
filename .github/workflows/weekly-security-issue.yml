@@ -13,11 +13,14 @@ jobs:
   create_audit_issue:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
       - name: Generate Issue using GitHub CLI
         run: |
           gh issue create \
-            --title "🛡️ Weekly Security Audit: Dependabot & Security Alerts" \
-            --body "### 🛡️ Dependabot & Security Alert Audit
+            --title "Weekly Security Audit: Dependabot & Security Alerts" \
+            --body "### Dependabot & Security Alert Audit
 
           Team, please go through the following **5 repositories** to review, fix, and resolve any outstanding Dependabot or security alerts. 
 
@@ -29,23 +32,23 @@ jobs:
 
           ---
 
-          ### 📦 Repository Checklist
+          ### Repository Checklist
 
           - [ ] **crkn_iiif_content_search** (Ruby / Rails API)  
-            🔗 [GitHub Repository](https://github.com) | [Security Alerts](https://github.com/security/dependabot)
+             [GitHub Repository](https://github.com) | [Security Alerts](https://github.com/security/dependabot)
           - [ ] **crkn_download_api**  
-            🔗 [GitHub Repository](https://github.com) | [Security Alerts](https://github.com/security/dependabot)
+             [GitHub Repository](https://github.com) | [Security Alerts](https://github.com/security/dependabot)
           - [ ] **crkn-IIIF-presentation-api** (Python / FastAPI)  
-            🔗 [GitHub Repository](https://github.com) | [Security Alerts](https://github.com/security/dependabot)
+             [GitHub Repository](https://github.com) | [Security Alerts](https://github.com/security/dependabot)
           - [ ] **noid-ark**  
-            🔗 [GitHub Repository](https://github.com) | [Security Alerts](https://github.com/security/dependabot)
+             [GitHub Repository](https://github.com) | [Security Alerts](https://github.com/security/dependabot)
           - [ ] **crkn_base_blacklight** (Ruby / Rails 7 + Blacklight 8)  
-            🔗 [GitHub Repository](https://github.com) | [Security Alerts](https://github.com/security/dependabot)
+             [GitHub Repository](https://github.com) | [Security Alerts](https://github.com/security/dependabot)
 
           ---
 
           ### 📝 Confirmation
           *When you complete a repository, please check it off above and drop a confirmation note below detailing what was fixed or if any alerts were explicitly dismissed with a valid reason.*" \
-            --label "security,audit,chore"
+            --label "security"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
