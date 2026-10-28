@@ -33,6 +33,8 @@ jobs:
           ---
 
           ### Repository Checklist
+          *When you complete a repository, please check it off above and drop a confirmation note below detailing what was fixed or if any alerts were explicitly dismissed with a valid reason.*
+          
           - [ ] **crkn_iiif_content_search** (Ruby / Rails API)  [GitHub Repository](https://github.com/crkn-rcdr/crkn_iiif_content_search/security) 
           - [ ] **crkn_download_api**  [GitHub Repository](https://github.com/crkn-rcdr/crkn_download_api/security)
           - [ ] **crkn-IIIF-presentation-api** (Python / FastAPI)  [GitHub Repository](https://github.com/crkn-rcdr/crkn-IIIF-presentation-api/security)
@@ -40,9 +42,7 @@ jobs:
           - [ ] **crkn_base_blacklight** (Ruby / Rails 7 + Blacklight 8)  [GitHub Repository](https://github.com/crkn-rcdr/crkn_base_blacklight/security)
          
           ---
-
-          ### 📝 Confirmation
-          *When you complete a repository, please check it off above and drop a confirmation note below detailing what was fixed or if any alerts were explicitly dismissed with a valid reason.*" \
+          
             --label "security"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
