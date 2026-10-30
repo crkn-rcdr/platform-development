@@ -22,7 +22,7 @@ jobs:
             --title "[security] Weekly Security Audit: Dependabot & Security Alerts" \
             --body "### Dependabot & Security Alert Audit
 
-          Team, please go through the following **5 repositories** to review, fix, and resolve any outstanding Dependabot or security alerts. 
+          Team, please go through the following **7 repositories** to review, fix, and resolve any outstanding Dependabot or security alerts. 
 
           #### **Action Items per Repository:**
           1. Click the links below and navigate to the **Dependabot alerts** on each repo.
