@@ -40,7 +40,9 @@ jobs:
           - [ ] **crkn-IIIF-presentation-api** (Python / FastAPI)  [GitHub Repository](https://github.com/crkn-rcdr/crkn-IIIF-presentation-api/security)
           - [ ] **noid-ark**  [GitHub Repository](https://github.com/crkn-rcdr/noid-ark/security) 
           - [ ] **crkn_base_blacklight** (Ruby / Rails 7 + Blacklight 8)  [GitHub Repository](https://github.com/crkn-rcdr/crkn_base_blacklight/security)
-         
+          - [ ] **windmill** [GitHub Repository](https://github.com/crkn-rcdr/crkn-windmill/security)
+          - [ ] **cap** [GitHub Repository](https://github.com/crkn-rcdr/cap/security)
+          
           ---" \
             --label "security" \
             --assignee "${{ github.actor }}" \
